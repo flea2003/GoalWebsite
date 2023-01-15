@@ -14,7 +14,7 @@ function random(mn, mx) {
 }
 
 myFunction = () =>{
-    document.getElementById("nemo").innerHTML = safeSet[2];
+    document.getElementById("nemo").innerHTML = safeSet[Math.floor(Math.random() * (5))];
 }
 
 
