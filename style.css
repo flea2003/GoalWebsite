@@ -86,7 +86,6 @@ textarea{
     font-size: 50px;
     position: relative;
     white-space: nowrap;
-    font-weight:bold;
 }
 
 .inceput{
@@ -107,10 +106,10 @@ textarea{
 #nemo{
     font-family: 'Sacramento', cursive;
     font-size: 30px;
-    animation: appear 2s;
     margin:30px;
     padding: 20px;
     border-radius: 10%;
+    animation: fadeIn 3s;
 
 }
 
@@ -120,3 +119,8 @@ textarea{
     border: solid #213409;
     border-radius: 15%;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
