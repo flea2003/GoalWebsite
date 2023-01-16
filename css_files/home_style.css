@@ -87,8 +87,86 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 45px;
-  grid-row-gap: 45px;
+    grid-row-gap: 45px;
 
+}
+
+/* Stuff related to the goal boxes**/
+
+.goal-box {
+    border: solid #7FBD32;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+    
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: italic;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.desc-text {
+    opacity: 50%;
+}
+.desc-text:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+.target {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+button {
+background-color: #7FBD32;
+border: #33982a;
+border-radius:;
+}
+button:hover{
+    background-color: aquamarine;
+}
+#counting {
+    margin: 0 10px;
+    font-size: 10x;
+}
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.slider p {
+    font-size:16px;
+    font-weight:600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left:10px;
+    color:#33982a;
+}
+input.larger {
+    width: 30px;
+    height: 30px;
 }
 
 

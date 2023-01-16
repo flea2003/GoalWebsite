@@ -40,22 +40,106 @@
 
     <div class="content">
         <div class="content-inner">
-            <div class="goal">
-                <div class="goal-name">Feed the cat</div>
-                <div clss="due-time">Today, 15:00</div>
-                <div class="goal-description">Feed the cat with delicious food </div>
-                <div class="check-box"><input type="checkbox" value="done"></div>
-            </div>
-            <div class="goal">
-                <div class="goal-name">Go to the farmers market</div>
-                <div class="due-time">Saturday</div>Groceries list:
-                <div><ul><li>potatoes</li>
-                    <li>tomatoes</li>
-                    <li>carrots</li>
-                    </ul></div>
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Call my grandparents
+                    </div>
+                    <div class="due-time">
+                        Tomorrow
+                    </div>
                 </div>
-                <div class="check-box"><input type="checkbox" value="done"></div>
+                <div class="description">
+                    <p class="desc-text">This is the description of the goal</p>
+                    <div class="target"><input type="checkbox" value="done" class="larger"></div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
             </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Drink 10 glasses of water
+                    </div>
+                    <div class="due-time">
+                        Today
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">Drink more water in order to be well hydrated.</p>
+                    <div class="target">
+                        <button onclick="decrement()">-</button>  
+                        <h2 id="counting"></h2>
+                        <button onclick="increment()">+</button> 
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Save 300$ for the holiday trip
+                    </div>
+                    <div class="due-time">
+                        March, 2023
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">
+                        <ul>
+                            <li>100$ for flight tickets</li>
+                            <li>150$ for hotel accommodation</li>
+                            <li>50$ for souvenirs</li>
+                        </ul>
+                    </p>
+                    <div class="slider">
+                        <input type="range" min="0" max="300" value="125" oninput="rangeValue.innerText = this.value">
+                        <p id="rangeValue">125</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        This is the goal name
+                    </div>
+                    <div class="due-time">
+                        This is the deadline
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">This is the description of the goal</p>
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="10" oninput="rangeValue.innerText = this.value">
+                        <p id="rangeValue">10</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
         </div>
     </div>
 
@@ -63,6 +147,17 @@
     
     <div class="footer">
         <p>&copy; Frija & Purice SRL.</p>
-      </div>
+    </div>
+
+    <script>
+        var data = 0;
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;}
+        function decrement() {
+            data = data -1;
+            document.getElementById("counting").innerText = data;
+        }
+    </script>
 </body>
 </html>
