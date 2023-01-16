@@ -48,9 +48,9 @@ body {
 #add-button {
     width: 45px;
     height: 45px;
-    position: absolute;
-    right: 5%;
-    bottom: 15%;
+    position: fixed;
+    right: 5px;
+    bottom: 70px;
 }
 
 .goal {
