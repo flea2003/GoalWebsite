@@ -152,6 +152,16 @@
         function toggleMenu(){
             menu.classList.toggle("open");
         }
+
+        var data = 0;
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;}
+        function decrement() {
+            data = data -1;
+            document.getElementById("counting").innerText = data;
+        }
+
     </script>
 
     <div class="footer">
