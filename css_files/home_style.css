@@ -63,13 +63,13 @@ body {
     flex-direction: column;
 }
 .footer {
-    background-color: #7FBD32;
-    text-align: center;
-    font-size: 12px;
-    position: absolute;
+
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
+    background-color: #7FBD32;
+    text-align: center;          
     
 }
 .inceput{
