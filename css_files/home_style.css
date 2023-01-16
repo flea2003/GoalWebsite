@@ -64,10 +64,13 @@ body {
     flex-direction: column;
 }
 .footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #7FBD32;
-    text-align: center;
-    font-size: 12px;
-    padding: 20px 0;
+    text-align: center;          
     
 }
 .inceput{
