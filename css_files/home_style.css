@@ -48,9 +48,10 @@ body {
 #add-button {
     width: 45px;
     height: 45px;
-    position: absolute;
-    right: 5%;
-    bottom: 15%;
+    position: fixed;
+    right: 20px;
+
+    bottom:100px;
 }
 
 .goal {
@@ -123,6 +124,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-style: italic;
 }
 .desc-text {
     opacity: 50%;
@@ -168,6 +170,14 @@ input.larger {
     height: 30px;
 }
 
+.desc-list {
+    opacity: 50%;
+}
+
+.desc-list:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
 
 
 nav, ul{

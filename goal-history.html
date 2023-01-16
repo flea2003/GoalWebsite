@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Goal History</title>
     <link rel="stylesheet" href="css_files\home_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav>
         <img src="css_files/unnamed.png" alt="" class="logo">
@@ -44,19 +43,17 @@
             <div class="goal-box">
                 <div class="info">
                     <div class="goal-name">
-                        Call my grandparents
+                        Send an email to the Head TA
                     </div>
                     <div class="due-time">
-                        Till: Tomorrow
+                        Finished: Fri, 13 Jan
                     </div>
                 </div>
                 <div class="description">
-                    <p class="desc-text">This is the description of the goal</p>
-                    <div class="target"><input type="checkbox" value="done" class="larger"></div>
+                    <p class="desc-text">Send an email to the Head TA regarding the OOP Project.</p>
                 </div>
                 <div class="options">
-                    <div class="option"><button>Modify</button></div>
-                    <div class="option"><button>Update</button></div>
+                    <div class="option">Task Completed🎉</div>
                     <div class="option"><button>Delete</button></div>
                 </div>
         
@@ -68,20 +65,15 @@
                         Drink 10 glasses of water
                     </div>
                     <div class="due-time">
-                        Till: Today
+                        Finished: Yesterday
                     </div>
                 </div>
                 <div class="description">
                     <p class="desc-text">Drink more water in order to be well hydrated.</p>
-                    <div class="target">
-                        <button onclick="decrement()">-</button>  
-                        <h2 id="counting">5</h2>
-                        <button onclick="increment()">+</button> 
-                    </div>
+                    
                 </div>
                 <div class="options">
-                    <div class="option"><button>Modify</button></div>
-                    <div class="option"><button>Update</button></div>
+                    <div class="option">Task Completed🎉</div>
                     <div class="option"><button>Delete</button></div>
                 </div>
         
@@ -90,28 +82,23 @@
             <div class="goal-box">
                 <div class="info">
                     <div class="goal-name">
-                        Save 300$ for the holiday trip
+                        Go to IKEA
                     </div>
                     <div class="due-time">
-                        Till: March, 2023
+                        Finished: 2 days ago
                     </div>
                 </div>
                 <div class="description">
                     <p class="desc-text">
                         <ul class="desc-list">
-                            <li>100$ for flight tickets</li>
-                            <li>150$ for hotel accommodation</li>
-                            <li>50$ for souvenirs</li>
+                            <li>office lamp</li>
+                            <li>bed sheets</li>
+                            <li>cutlery</li>
                         </ul>
                     </p>
-                    <div class="slider">
-                        <input type="range" min="0" max="300" value="125" oninput="rangeValue.innerText = this.value">
-                        <p id="rangeValue">125</p>
-                    </div>
                 </div>
                 <div class="options">
-                    <div class="option"><button>Modify</button></div>
-                    <div class="option"><button>Update</button></div>
+                    <div class="option">Task Completed🎉</div>
                     <div class="option"><button>Delete</button></div>
                 </div>
             
@@ -120,22 +107,17 @@
             <div class="goal-box">
                 <div class="info">
                     <div class="goal-name">
-                        Do 500 push-ups
+                        Save John and Sarah Connor
                     </div>
                     <div class="due-time">
-                        Till: Sat 21, 2023 
+                        Finished: 1984
                     </div>
                 </div>
                 <div class="description">
-                    <p class="desc-text">Do 500 push-ups till saturday.</p>
-                    <div class="slider">
-                        <input type="range" min="0" max="500" value="268" oninput="rangeValue.innerText = this.value">
-                        <p id="rangeValue">268</p>
-                    </div>
+                    <p class="desc-text">I'll be back.</p>
                 </div>
                 <div class="options">
-                    <div class="option"><button>Modify</button></div>
-                    <div class="option"><button>Update</button></div>
+                    <div class="option">Task Completed🎉</div>
                     <div class="option"><button>Delete</button></div>
                 </div>
             
@@ -143,9 +125,10 @@
 
         </div>
     </div>
+    <div class="footer">
+        <p>&copy; Frija & Purice SRL.</p>
+    </div>
 
-    <a href="add-goal.html"><img id="add-button" src="css_files\plus-sign-icon-31.png" alt="" width="30px"></a>
-    
     <script>
         let menu = document.getElementById("menu");
 
@@ -153,21 +136,8 @@
             menu.classList.toggle("open");
         }
 
-        var data = 0;
-        function increment() {
-            data = data + 1;
-            document.getElementById("counting").innerText = data;}
-        function decrement() {
-            data = data -1;
-            document.getElementById("counting").innerText = data;
-        }
-
     </script>
 
-    <div class="footer">
-        <p>&copy; Frija & Purice SRL.</p>
-    </div>
 
-    
 </body>
 </html>
