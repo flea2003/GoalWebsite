@@ -51,9 +51,13 @@ function functionaddclick(){
 }
 
 function click(){
-  
+  let li = document.createElement("li");
+  let text = document.createTextNode("Number of clicks: " + numberofclicks);
+  li.appendChild(text);
+  document.getElementById("bruceli").appendChild(li);
 }
 
 function functions(){
   document.getElementById("ascuns").style.display = "block";
+  click();
 }
