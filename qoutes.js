@@ -1,4 +1,18 @@
+const button = document.getElementById("btn");
+button.addEventListener("click", addNewItem);
+      
+function addNewItem(evt) {
+  let menu_item = document.getElementById("menu-item").value;
+  let menu = document.getElementById("menu");
+  let li = document.createElement("li");
+  let text = document.createTextNode(menu_item);
+  li.appendChild(text);
+  menu.appendChild(li);
+  document.getElementById('menu-item').value = "";
+}
+
 var up = document.getElementById("nemo");
+
 
 var safeSet = [
   "It’s only after you’ve stepped outside your comfort zone that you begin to change, grow, and transform. ― Roy T. Bennett",
@@ -24,6 +38,9 @@ myFunction = () =>{
     document.getElementById("nemo").innerHTML = safeSet[Math.floor(Math.random() * (11))];
 }
 
+document.getElementById("lol").addEventListener("click", myFunction);
+
+myFunction();
 
 
 
